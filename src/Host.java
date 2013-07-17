@@ -9,6 +9,18 @@ public class Host {
 	private double load_avg_5min;
 	private double load_avg_15min;
 	
+	public Host(int host_id, String host_name, String ip_addr, String os,
+			double load_avg_1min, double load_avg_5min, double load_avg_15min) {
+		super();
+		this.host_id = host_id;
+		this.host_name = host_name;
+		this.ip_addr = ip_addr;
+		this.os = os;
+		this.load_avg_1min = load_avg_1min;
+		this.load_avg_5min = load_avg_5min;
+		this.load_avg_15min = load_avg_15min;
+	}
+	
 	public int getHost_id() {
 		return host_id;
 	}
